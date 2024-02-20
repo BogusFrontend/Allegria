@@ -3,7 +3,7 @@ import Logo from '../../../public/logo/logo.svg'
 
 export const Header = () => {
     return (
-        <header className="pt-4">
+        <header className="pt-8 pb-8">
             <div className="container">
                 <nav className="flex justify-between items-center uppercase">
                     <a href="#">
