@@ -1,3 +1,7 @@
+![image](https://github.com/BogusFrontend/Allegria/assets/101849208/68c9fefb-92b6-406c-901d-9c06c95de616)
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
