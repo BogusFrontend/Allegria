@@ -3,10 +3,12 @@ import {Footer} from "./components/footer.jsx";
 
 export const Layout = (props) => {
     return (
-        <div>
-            <Header />
-                {props.children}
-            <Footer />
-        </div>
+        <>
+            <Header/>
+                <div className="container">
+                    {props.children}
+                </div>
+            <Footer/>
+        </>
     );
 };

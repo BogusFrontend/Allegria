@@ -1,22 +1,28 @@
-import {createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
-import {HomePage} from "../pages/Home/page.jsx";
-import {AboutPage} from "../pages/About/page.jsx";
-import {CatalogPage} from "../pages/Catalog/page.jsx";
-import {ContactsPage} from "../pages/Contacts/page.jsx";
+import {createBrowserRouter} from "react-router-dom";
 
-export const routes = createRoutesFromElements(
-    <Route>
-        <Route path="/" element={<HomePage/>}/>
-        <Route>
-            <Route path="about" element={<AboutPage/>}/>
-        </Route>
-        <Route>
-            <Route path="catalog" element={<CatalogPage/>}/>
-        </Route>
-        <Route>
-            <Route path="contacts" element={<ContactsPage/>}/>
-        </Route>
-    </Route>
+import {HomePage} from "../pages/home/page.jsx";
+import {AboutPage} from "../pages/about/page.jsx";
+import {CatalogPage} from "../pages/catalog/page.jsx";
+import {ContactsPage} from "../pages/contacts/page.jsx";
+import {ErrorPage} from "../pages/error/page.jsx";
 
-)
-export const router = createBrowserRouter(routes);
+
+export const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <HomePage />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "catalog",
+        element: <CatalogPage/>,
+    },
+    {
+        path: "about",
+        element: <AboutPage />,
+    },
+    {
+        path: 'contacts',
+        element: <ContactsPage />
+    },
+]);

@@ -1,4 +1,5 @@
 import { ArrowSquareRight } from "@phosphor-icons/react";
+import {Link} from "react-router-dom";
 
  export const Footer = () => {
     return (
@@ -11,9 +12,9 @@ import { ArrowSquareRight } from "@phosphor-icons/react";
                     <ArrowSquareRight className="cursor-pointer" size={24} color='#E64926'/>
                 </label>
                 <div className="flex justify-center gap-8 text-gray-400 pb-20">
-                    <a className="hover:underline" href="#">О нас</a>
-                    <a className="hover:underline" href="#">Распространенные вопросы</a>
-                    <a className="hover:underline" href="#">Бренды</a>
+                    <Link className="hover:underline" to="about">О нас</Link>
+                    <Link className="hover:underline" to="catalog">Каталог</Link>
+                    <Link className="hover:underline" to="contacts">Контакты</Link>
                 </div>
             </div>
             <div className="p-5 container flex justify-between">
