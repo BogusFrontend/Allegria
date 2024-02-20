@@ -1,12 +1,18 @@
-import {StrictMode} from "react";
+import React from "react";
 import ReactDOM from 'react-dom/client'
-import {App} from './App.jsx'
-import Context from "./utils/Context.jsx";
+import { RouterProvider } from 'react-router-dom';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <StrictMode>
+import { router } from './router';
+
+import Context from "./utils/Context.jsx";
+import { Layout } from "./layout/layout.jsx";
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+    <React.StrictMode>
         <Context>
-            <App/>
+            <RouterProvider router={router} />
         </Context>
-    </StrictMode>
+    </React.StrictMode>
 );

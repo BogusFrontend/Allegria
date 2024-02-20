@@ -15,7 +15,12 @@ export default {
       },
       fontFamily: {
         sans: ["IBM Plex Sans", "sans-serif"],
-      }
+      },
+      backgroundImage: {
+        "hero": "url('/background/bg-home.jpg')",
+        "arrival-left": "url('/arrival/left.jpg')",
+        "arrival-right": "url('/arrival/right.jpg')",
+      },
     },
   },
   plugins: [],
